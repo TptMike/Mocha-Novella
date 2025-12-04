@@ -1,150 +1,204 @@
-# Mike Personal - WordPress Theme
+# Mocha Novella
 
-A custom WordPress theme designed for technically inclined creatives who want to showcase their books, projects, and build a fanbase while maintaining excellent readability and reflecting their unique personality.
+**Contributors:** mike  
+**Tags:** blog, portfolio, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, custom-colors, responsive-layout, full-width-template, sticky-post, theme-options  
+**Requires at least:** 6.0  
+**Tested up to:** 6.9  
+**Requires PHP:** 7.4  
+**Stable tag:** 1.0.0  
+**License:** GPLv2 or later  
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
-## Features
+A cozy WordPress theme for authors and creatives, inspired by books, coffee, and music. Perfect for writers showcasing their work, building a fanbase, and sharing their creative journey in a warm, inviting space.
 
-### Reader-Focused Design
-- **Optimal Typography**: Large, readable fonts with comfortable line spacing (1.7-1.8)
-- **Content Width**: Optimal reading width of 700px for maximum readability
-- **Reading Time**: Automatic reading time estimates for each post
-- **Reading Progress Bar**: Visual progress indicator on single posts
+## Description
 
-### Creative Technical Touches
-- **Code-Friendly Styling**: Beautiful syntax highlighting for code blocks
-- **Modern CSS Variables**: Easy color customization
-- **Smooth Animations**: Subtle hover effects and transitions
-- **Creative Accents**: Arrow indicators on "Continue reading" links
+**Mocha Novella** is a beautifully crafted WordPress theme designed for authors, bloggers, and creative professionals. Inspired by the warm atmosphere of a coffee shop and the comfort of a well-loved library, this theme creates an inviting space where readers feel at home.
 
-### Personal Branding
-- **Custom Logo Support**: Upload your own logo
-- **Social Media Integration**: Footer social links (Twitter, Facebook, Instagram, LinkedIn, GitHub, Email)
-- **Author Showcase**: Prominent author information on posts
-- **Project & Book Ready**: Perfect for showcasing creative work
+### Key Features
 
-### WordPress Features
-- **Full Theme Support**: Post thumbnails, custom logo, HTML5 markup
-- **Navigation Menus**: Primary and footer menu locations
-- **Widget Areas**: Sidebar and footer widget areas
-- **Custom Image Sizes**: Featured images and thumbnails
-- **Responsive Design**: Mobile-friendly layout
-- **Accessibility Ready**: Screen reader support, skip links
+#### 📚 Reader-Focused Design
+- **Optimal Typography**: Rokkitt for headings, Georgia for body text - perfect for extended reading
+- **Wide Content Width**: 1300px content area for comfortable reading without overwhelming the screen
+- **Reading Time Estimates**: Automatic calculation and display of reading time for each post
+- **Beautiful Bookshelf Background**: Subtle, fixed bookshelf pattern that creates atmosphere without distraction
+
+#### ☕ Coffee & Books Aesthetic
+- **Warm Color Palette**: Rich coffee browns, creams, and amber tones
+- **White Content Cards**: Clean, readable content panels that stand out
+- **Customizable Avatar**: Upload your own author avatar via the Customizer
+- **Author Profile Sidebar**: Showcase your bio, tagline, and social links prominently
+
+#### 🎵 Modern Functionality
+- **Infinite Dropdown Menus**: Unlimited nesting levels for complex navigation structures
+- **Responsive Design**: Looks great on all devices from mobile to desktop
+- **Customizable Excerpts**: Choose full post or excerpt display with adjustable word count
+- **Featured Image Support**: Banner-style featured images that showcase your content
+
+#### ⚙️ WordPress Features
+- **Full Customizer Integration**: Easily customize colors, fonts, social links, and more
+- **Widget Ready**: Sidebar and footer widget areas
+- **Navigation Menus**: Primary menu with dropdown support
+- **Custom Logo Support**: Upload your brand logo
+- **Translation Ready**: All strings are prepared for translation
 
 ## Installation
 
-1. Upload the `mike-personal` folder to `/wp-content/themes/`
-2. Activate the theme through the 'Appearance' menu in WordPress
-3. Go to **Appearance > Customize** to configure theme options
+### From WordPress Admin
+1. Go to **Appearance > Themes > Add New**
+2. Click **Upload Theme**
+3. Choose the `mocha-novella.zip` file
+4. Click **Install Now**
+5. Activate the theme
+
+### Manual Installation
+1. Extract the zip file to get the `mocha-novella` folder
+2. Upload the `mocha-novella` folder to `/wp-content/themes/` directory
+3. Go to **Appearance > Themes** and activate **Mocha Novella**
+
+### Requirements
+- WordPress 6.0 or higher
+- PHP 7.4 or higher
+
+## Frequently Asked Questions
+
+### How do I customize the theme colors?
+The theme uses a warm coffee and books color palette. Colors can be customized by editing the CSS variables in `style.css` or by creating a child theme.
+
+### Can I change the sidebar layout?
+Yes! The sidebar appears on the right side of the content. You can add widgets via **Appearance > Widgets** or hide it by removing all widgets.
+
+### How do I add my social media links?
+Go to **Appearance > Customize > Social Media Links** and enter your social media URLs. Supported platforms include Twitter, Facebook, Instagram, Pinterest, LinkedIn, GitHub, and Email.
+
+### How do I customize the author avatar?
+Go to **Appearance > Customize > Theme Options > Author Avatar Image** to upload your custom avatar. If no image is uploaded, your WordPress user avatar will be used.
+
+### Can I show full posts instead of excerpts on archive pages?
+Yes! Go to **Appearance > Customize > Post Display Options** and select "Full Post" or "Excerpt". You can also adjust the excerpt length.
 
 ## Customization
 
-### Setting Up Your Menu
+### Theme Options (Customizer)
 
+**Appearance > Customize > Theme Options**
+- Footer Text
+- Site Title Font Size
+- Author Avatar Image
+
+**Appearance > Customize > Post Display Options**
+- Archive Display Type (Full Post or Excerpt)
+- Excerpt Length (10-200 words)
+
+**Appearance > Customize > Social Media Links**
+- Twitter/X URL
+- Facebook URL
+- Instagram URL
+- Pinterest URL
+- RSS Feed URL
+- LinkedIn URL
+- GitHub URL
+- Email Address
+
+### Menu Setup
 1. Go to **Appearance > Menus**
-2. Create a new menu or select an existing one
-3. Add pages, posts, or custom links
-4. Assign the menu to "Primary Menu" location
-
-### Adding a Custom Logo
-
-1. Go to **Appearance > Customize > Site Identity**
-2. Click "Select Logo"
-3. Upload your logo image
-4. Adjust the logo size if needed
-
-### Configuring Social Links
-
-The theme supports social media links in the footer. You can customize these through:
-
-1. **Appearance > Customize > Theme Options** (if you add customizer controls)
-2. Or edit `footer.php` directly to add your social media URLs
-
-Currently supported platforms:
-- Twitter
-- Facebook
-- Instagram
-- LinkedIn
-- GitHub
-- Email
-
-### Changing Colors
-
-The theme uses CSS variables for easy color customization. Edit `style.css` and modify the `:root` variables:
-
-```css
-:root {
-    --color-primary: #2563eb;        /* Main brand color */
-    --color-secondary: #7c3aed;      /* Secondary color */
-    --color-accent: #f59e0b;         /* Accent color */
-    /* ... more colors ... */
-}
-```
+2. Create or select a menu
+3. Add items (pages, posts, custom links)
+4. Assign to "Primary Menu" location
+5. Menus support unlimited nesting levels
 
 ### Widget Areas
+- **Sidebar** (`sidebar-1`): Right sidebar on posts and archives
+- **Footer Widget Area** (`footer-1`): Footer widget area
 
-The theme includes two widget areas:
-
-1. **Sidebar** (`sidebar-1`): Appears on blog posts and archive pages
-2. **Footer Widget Area** (`footer-1`): Appears in the footer
-
-Add widgets through **Appearance > Widgets**.
+### Custom Logo
+1. Go to **Appearance > Customize > Site Identity**
+2. Click "Select Logo"
+3. Upload your logo (recommended: 400px width, flexible height)
 
 ## File Structure
 
 ```
-mike-personal/
-├── style.css          # Main stylesheet with theme header
-├── functions.php      # Theme functions and setup
-├── header.php         # Site header
-├── footer.php         # Site footer
-├── index.php          # Main blog template
-├── single.php         # Single post template
-├── page.php           # Page template
-├── archive.php        # Archive template
-├── search.php         # Search results template
-├── 404.php            # 404 error template
-├── sidebar.php        # Sidebar template
-├── comments.php       # Comments template
-├── searchform.php     # Search form template
+mocha-novella/
+├── style.css              # Main stylesheet with theme header
+├── functions.php          # Theme functions and setup
+├── header.php             # Site header
+├── footer.php             # Site footer
+├── sidebar.php            # Sidebar template
+├── index.php              # Main blog template
+├── single.php             # Single post template
+├── page.php               # Page template
+├── archive.php            # Archive template (categories, tags, author)
+├── search.php             # Search results template
+├── 404.php                # 404 error template
+├── comments.php           # Comments template
+├── searchform.php         # Search form template
+├── screenshot.png         # Theme screenshot (1200x900px)
 ├── js/
-│   └── theme.js       # Theme JavaScript
-└── README.md          # This file
+│   └── theme.js           # Theme JavaScript
+└── README.md              # This file
 ```
 
-## Customization Tips
+## Changelog
 
-### For Authors
-
-1. **Create a "Books" Category**: Use this for book-related posts
-2. **Featured Images**: Always use featured images for better visual appeal
-3. **Reading Lists**: Use the sidebar widget to create reading lists
-4. **Author Bio**: Consider adding an author bio widget in the sidebar
-
-### For Project Showcases
-
-1. **Project Categories**: Create categories for different project types
-2. **Image Galleries**: Use WordPress galleries to showcase project images
-3. **Featured Projects**: Use sticky posts to highlight important projects
-
-### Technical Blogging
-
-1. **Code Blocks**: The theme has special styling for code blocks
-2. **Syntax Highlighting**: Consider installing a syntax highlighting plugin
-3. **Technical Tags**: Use tags to organize technical topics
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+### 1.0.0
+* Initial release
+* Books, coffee, and music inspired design
+* Customizable avatar via Customizer
+* Infinite dropdown menu nesting
+* Responsive layout
+* Excerpt customization options
+* Social media integration
+* Reading time estimates
+* Customizable content display
 
 ## Credits
 
-Built with attention to detail for authors, creators, and technical bloggers.
+**Theme Name:** Mocha Novella  
+**Theme Author:** Mike  
+**Author URI:** https://tptmike.com  
+**Theme URI:** https://tptmike.com
+
+### Fonts
+- **Rokkitt**: Google Fonts (headings)
+- **Georgia**: System font (body text)
+- **Font Awesome 6.4.0**: Social media icons
+
+### Inspiration
+This theme was designed with authors, bloggers, and creative professionals in mind. The warm, inviting aesthetic reflects the cozy atmosphere of a coffee shop and the comfort of a well-loved library.
+
+## Support
+
+For support, feature requests, or bug reports, please visit:
+- **Website:** https://tptmike.com
+- **GitHub:** (Add your GitHub repository URL here)
 
 ## License
 
-This theme is licensed under the GNU General Public License v2 or later.
+Mocha Novella WordPress Theme, Copyright (C) 2024  
+Mocha Novella is distributed under the terms of the GNU GPL
 
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+## Development
+
+### Requirements
+- WordPress 6.0+
+- PHP 7.4+
+- Node.js (for development, if needed)
+
+### Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Screenshots
+
+1. Homepage with blog posts
+2. Single post view
+3. Archive page
+4. Mobile responsive design
+
+---
+
+**Enjoy your new theme!** ☕📚✨

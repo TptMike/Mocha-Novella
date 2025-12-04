@@ -2,7 +2,7 @@
 /**
  * The search form template
  *
- * @package Mike_Personal
+ * @package Mocha_Novella
  * @since 1.0.0
  */
 ?>
